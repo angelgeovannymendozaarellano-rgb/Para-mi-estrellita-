@@ -282,7 +282,7 @@
             const container = document.getElementById('globos-container');
             for(let i=0; i<60; i++) {
                 const b = document.createElement('div'); b.className = 'balloon';
-                b.style.setProperty('--sz', `${Math.random()*30+20}px`);
+                b.style.setProperty('--sz', (Math.random()*30+20)+`px`);
                 b.style.backgroundColor = ['#ff4081','#e91e63','#7b1fa2','#ffd700','#ffffff'][Math.floor(Math.random()*5)];
                 b.style.left = '70px'; b.style.setProperty('--x-move', (Math.random()*600 - 300) + 'px');
                 b.style.setProperty('--dur', (Math.random()*2+2)+'s'); b.style.animationDelay = (Math.random()*0.8)+'s';
